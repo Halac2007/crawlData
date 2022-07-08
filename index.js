@@ -8,7 +8,7 @@ app.use(cors())
 
 app.get('/', async (req, res) => {
   try {
-    const response = await fetch('https://plo.vn/an-sach-song-khoe/')
+    const response = await fetch('https://kynguyenso.plo.vn/')
     const body = await response.text()
     const $ = cheerio.load(body)
     const article = []
