@@ -1,8 +1,10 @@
 import * as cheerio from 'cheerio'
 import fetch from 'node-fetch'
 import express from 'express'
+import cors from 'cors'
 
 const app = express()
+app.use(cors())
 
 app.get('/', async (req, res) => {
   try {
